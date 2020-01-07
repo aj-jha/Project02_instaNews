@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="/reset.css" />
+    <link rel="stylesheet" href="/fonts.css" />
+    <!-- Fonts need to be pulled in before we can reference it in the style.css below; ORDER MATTERS!!-->
+    <link rel="stylesheet" href="/style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/35613b5ecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>InstaNews</title>
+  </head>
+  <body>
+    <img
+      src="/assets/images/nyt-logo.svg"
+      alt="The Logo of New York Times Publication"
+    />
+    <form action="">
+      <h1>Please select a color</h1>
+      <fieldset>
+        <select id="sectionSelection">
+          <option value="#FFFFFF">White</option>
+        </select>
+        <input type="button" value="change color" onclick="changeColor()" />
+      </fieldset>
+    </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
