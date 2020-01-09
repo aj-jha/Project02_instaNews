@@ -4,6 +4,8 @@ $(document).ready(function() {
 
 //Note it should be on change, not click!
 $("#sectionSelection").on("change", function() {
+  $(".header").css("margin-top", "5vh");
+  $(".logoImage").css("width", "170px");
   $(".container").empty();
   //console.log("changed"); //Notes: sanity check, look at console log to see if it worked
   let sectionSelected = $("#sectionSelection :selected").val();
@@ -24,7 +26,7 @@ $("#sectionSelection").on("change", function() {
     // });
     let imageCounter = 0;
 
-    for (let n = imageCounter; n <= 12; n++) {
+    for (let n = imageCounter; n <= 12 && imageCounter < 12; n++) {
       if (data.results[n].multimedia.length > 1) {
         $(".container").append(`
         <div class="gridCell">

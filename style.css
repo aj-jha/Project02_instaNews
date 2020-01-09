@@ -24,6 +24,7 @@
   /* justify-content: space-around; */
   margin-top: 30vh;
   align-items: center;
+  margin-bottom: 10vh;
 }
 .buttonSection {
   display: flex;
@@ -42,7 +43,7 @@
 
 .container {
   width: 100%;
-  height: 400vw;
+  height: 1200vw;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -50,7 +51,7 @@
   text-align: center;
   align-content: center;
   align-items: flex-end;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .gridCell {
@@ -95,6 +96,9 @@
   .header {
     display: flex;
     flex-direction: row;
+  }
+  .header {
+    margin-bottom: 1vh;
   }
 }
 
