@@ -5,7 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="/reset.css" />
-    <link rel="stylesheet" href="/fonts.css" />
+    <link
+      rel="stylesheet"
+      href="/assets/fonts/fonts_transfonter/stylesheet.css"
+    />
     <!-- Fonts need to be pulled in before we can reference it in the style.css below; ORDER MATTERS!!-->
     <link rel="stylesheet" href="/style.css" />
 
@@ -15,20 +18,54 @@
     ></script>
     <title>InstaNews</title>
   </head>
+
   <body>
-    <img
-      src="/assets/images/nyt-logo.svg"
-      alt="The Logo of New York Times Publication"
-    />
-    <form action="">
-      <h1>Please select a color</h1>
-      <fieldset>
-        <select id="sectionSelection">
-          <option value="#FFFFFF">White</option>
-        </select>
-        <input type="button" value="change color" onclick="changeColor()" />
-      </fieldset>
-    </form>
+    <section class="header">
+      <img
+        class="logoImage"
+        src="/assets/images/nyt-logo.svg"
+        alt="The Logo of New York Times Publication"
+      />
+
+      <div class="buttonSection">
+        <p class="openSans-light">Choose a section:</p>
+        <br />
+        <form action="selectSection">
+          <select id="sectionSelection">
+            <option value="sections">Sections...</option>
+            <option value="arts">Arts</option>
+            <option value="automobiles">Automobiles</option>
+            <option value="books">Books</option>
+            <option value="business">Business</option>
+            <option value="fashion">Fashion</option>
+            <option value="food">Food</option>
+            <option value="health">Health</option>
+            <option value="home">Home</option>
+            <option value="insider">Insider</option>
+            <option value="magazine">Magazine</option>
+            <option value="movies">Movies</option>
+            <option value="national">National</option>
+            <option value="nyregion">NY Region</option>
+            <option value="obituaries">Obituaries</option>
+            <option value="opinion">Opinion</option>
+            <option value="politics">Politics</option>
+            <option value="realestate">Real Estate</option>
+            <option value="science">Science</option>
+            <option value="sports">Sports</option>
+            <option value="sundayreview">Sunday Review</option>
+            <option value="technology">Technology</option>
+            <option value="theater">Theater</option>
+            <option value="tmagazine">T Magazine</option>
+            <option value="travel">Travel</option>
+            <option value="upshot">Upshot</option>
+            <option value="world">World</option>
+          </select>
+        </form>
+      </div>
+    </section>
+    <!-- <input type="button" value="change color" onclick="changeColor()" /> -->
+    <section class="container"></section>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="index.js"></script>
   </body>
